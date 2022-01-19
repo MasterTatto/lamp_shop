@@ -1,7 +1,11 @@
 .home {
-  //background: #fff;
-  margin-top: 50px;
-  border-radius: 10px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px 52px;
+  padding-bottom: 40px;
+  position: relative;
+  margin-top: -27px;
+  z-index: 2;
 }
 
 .carousel {
@@ -26,6 +30,7 @@
     color: #152b3c;
     font-weight: 700;
     margin-bottom: 80px;
+    margin-top: 50px;
   }
 
   p {
@@ -51,14 +56,14 @@
 }
 
 .name {
-  text-decoration: underline;
   font-style: italic;
-  color: #4380b1;
+  color: #734993;
+  border-bottom: 1px solid #734993;
+  transition: .5s;
   cursor: pointer;
-  transition: .3s all;
 
   &:hover {
-    color: #dde1f6;
+    color: #f86384;;
   }
 }
 
@@ -72,7 +77,7 @@
   margin-top: 20px;
 
   li {
-    list-style: circle;
+    //list-style: circle;
     font-size: 20px;
     font-weight: 700;
     max-width: 400px;
@@ -81,6 +86,50 @@
     height: fit-content;
     margin-top: 30px;
     color: #020d2a;
+    position: relative;
+
+    &:before {
+      content: url('../../../src/assets/svg/honor.svg');
+      width: 30px;
+      position: absolute;
+      left: -35px;
+    }
   }
 
 }
+
+.before1 {
+  position: relative;
+
+  &::before {
+    content: url('../../../src/assets/svg/lamp1.svg');
+    width: 200px;
+    position: absolute;
+    right: -70%;
+  }
+}
+
+.before2 {
+  position: relative;
+
+  &::before {
+    content: url('../../../src/assets/svg/lamp2.ico');
+    width: 200px;
+    position: absolute;
+    left: -70%;
+    top: 40px;
+  }
+}
+
+.before3 {
+  position: relative;
+
+  &::before {
+    content: url('../../../src/assets/svg/lamp3.svg');
+    width: 200px;
+    position: absolute;
+    right: -70%;
+
+  }
+}
+

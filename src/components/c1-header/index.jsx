@@ -16,7 +16,8 @@ const Header = ({navigate, setNavigate}) => {
             <Container>
                 <div className={s.header_container}>
                     <div className={s.logo_container} onClick={() => backHome('/')}>
-                        <Lamp style={{height: '100%', width: '100%'}}/>
+                        {/*<Lamp style={{height: '100%', width: '100%'}}/>*/}
+                        Lamp Shop
                     </div>
                     <div className={s.panel_container}>
                         <ul className={s.ul}>
