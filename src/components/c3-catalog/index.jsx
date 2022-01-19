@@ -3,8 +3,8 @@ import s from './style.module.scss'
 
 const Catalog = () => {
     return (
-        <div>
-<h1>catalog</h1>
+        <div className={s.catalog}>
+            <h1>catalog</h1>
         </div>
     );
 };
