@@ -59,7 +59,8 @@
   font-size: 18px;
   color: #fff;
   font-weight: 500;
-  transition: 0.5s;
+  transition: .5s;
+  transform: translate(0, 1px);
 
   &:first-child {
     margin-left: 0;
@@ -72,7 +73,6 @@
   &:hover {
     //border-bottom: 3px solid #f86384;
     //color: #f86384;
-    border-bottom: 3px solid #a6b2ec;
     color: #a6b2ec;
   }
 }

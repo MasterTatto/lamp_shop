@@ -6,8 +6,7 @@ import {ReactComponent as Basket} from '../../assets/svg/basket.svg'
 import {NavLink} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
 
-const Header = ({navigate, setNavigate}) => {
-    const [shop, setShop] = useState(0)
+const Header = ({navigate, setNavigate, lengthBasket}) => {
 
     const backHome = useNavigate()
 
@@ -43,10 +42,10 @@ const Header = ({navigate, setNavigate}) => {
                         </ul>
                     </div>
                     <div className={s.log_shop_container}>
-                        <div className={s.basket_container} onClick={() => setShop(shop + 1)}>
+                        <NavLink to={'/basket'} className={s.basket_container}>
                             <Basket className={s.basket}/>
-                            <div className={s.count}>{shop}</div>
-                        </div>
+                            <div className={s.count}>{lengthBasket}</div>
+                        </NavLink>
                     </div>
                 </div>
             </Container>

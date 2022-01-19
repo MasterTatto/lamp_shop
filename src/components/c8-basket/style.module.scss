@@ -1,0 +1,70 @@
+.basket {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px 52px;
+  padding-bottom: 40px;
+  position: relative;
+  margin-top: -27px;
+  z-index: 2;
+  min-height: calc(100vh - 246px);
+
+  h1 {
+    color: #152b3c;
+    font-weight: 700;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    font-size: 30px;
+  }
+}
+
+.item {
+  border: 1px solid rgba(68, 68, 68, 0.52);
+  height: 170px;
+  background: #e9e8f8;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    height: inherit;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  div {
+    font-size: 25px;
+    transition: .8s;
+    cursor: pointer;
+    color: red;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.accept {
+
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+.accept_box {
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  button {
+    float: right;
+  }
+}
