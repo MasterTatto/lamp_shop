@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lamp_shop/static/css/main.76a46ab1.css",
-    "main.js": "/lamp_shop/static/js/main.a59b89e0.js",
+    "main.css": "/lamp_shop/static/css/main.3f0dba61.css",
+    "main.js": "/lamp_shop/static/js/main.dd2b83a7.js",
     "static/js/787.1537c8c9.chunk.js": "/lamp_shop/static/js/787.1537c8c9.chunk.js",
     "static/media/img6.jpg": "/lamp_shop/static/media/img6.657b6e502f156cbd9308.jpg",
     "static/media/img3.jpg": "/lamp_shop/static/media/img3.6ee46fae121c1dd35a87.jpg",
@@ -9,17 +9,21 @@
     "static/media/img5.jpg": "/lamp_shop/static/media/img5.251e1c6367d088d84823.jpg",
     "static/media/img4.jpg": "/lamp_shop/static/media/img4.6b119a05f26e7e6a3ade.jpg",
     "static/media/img2.jpg": "/lamp_shop/static/media/img2.df399c30b3b63668fa0a.jpg",
+    "static/media/lamp2.ico": "/lamp_shop/static/media/lamp2.41a0c94037caca8d56cf.ico",
+    "static/media/lamp3.svg": "/lamp_shop/static/media/lamp3.6f36cb75c491d34f4184.svg",
     "static/media/vk.svg": "/lamp_shop/static/media/vk.61cf2de74a4db3874113f88aee571e82.svg",
     "static/media/logo.svg": "/lamp_shop/static/media/logo.49f4b44b2772a6659ccb06fef9824e42.svg",
     "index.html": "/lamp_shop/index.html",
+    "static/media/lamp1.svg": "/lamp_shop/static/media/lamp1.150c0f5dfd8b5466f3de.svg",
+    "static/media/honor.svg": "/lamp_shop/static/media/honor.16ecef79005d7c2aba55.svg",
     "static/media/basket.svg": "/lamp_shop/static/media/basket.cf7d6af2be4dcec732e490d5593d77c3.svg",
     "static/media/telegramm.svg": "/lamp_shop/static/media/telegramm.adf44b6a685e845f00111f40e2b8fd3b.svg",
-    "main.76a46ab1.css.map": "/lamp_shop/static/css/main.76a46ab1.css.map",
-    "main.a59b89e0.js.map": "/lamp_shop/static/js/main.a59b89e0.js.map",
+    "main.3f0dba61.css.map": "/lamp_shop/static/css/main.3f0dba61.css.map",
+    "main.dd2b83a7.js.map": "/lamp_shop/static/js/main.dd2b83a7.js.map",
     "787.1537c8c9.chunk.js.map": "/lamp_shop/static/js/787.1537c8c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76a46ab1.css",
-    "static/js/main.a59b89e0.js"
+    "static/css/main.3f0dba61.css",
+    "static/js/main.dd2b83a7.js"
   ]
 }
