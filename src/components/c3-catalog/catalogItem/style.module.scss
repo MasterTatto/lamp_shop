@@ -30,6 +30,11 @@
     color: #21273d;
     cursor: auto;
     overflow: hidden;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 7px 7px 8px #444;
+    }
   }
 
   .items_container {
@@ -50,7 +55,118 @@
 }
 
 .items_body {
+  position: relative;
+
   div {
     margin: 10px 0 15px 0;
+  }
+}
+
+//.like {
+//  position: absolute;
+//  height: 35px;
+//  right: 15px;
+//  top: 15px;
+//  overflow: hidden;
+//  width: 35px;
+//  fill: #444;
+//  transition: .4s all;
+//
+//
+//  &:hover {
+//    fill: #FA6585;
+//    cursor: pointer;
+//  }
+//}
+
+.btn {
+  width: 100%;
+
+  &:first-child {
+    background: #fff;
+  }
+
+  &:last-child {
+    margin-top: 20px;
+
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+
+.like {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: fit-content;
+}
+
+.like i {
+  cursor: pointer;
+  padding: 10px 12px 8px;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  color: #aaa;
+  transition: .2s;
+
+}
+
+.like i:before {
+  font-family: fontawesome;
+  content: '\f004';
+  font-style: normal;
+}
+
+.like span {
+  position: absolute;
+  //bottom: 70px;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  transition: .6s;
+  z-index: -2;
+  font-size: 2px;
+  color: transparent;
+  font-weight: 400;
+}
+
+.press i {
+  animation: size .4s;
+  color: #FA6585;
+}
+
+.press span {
+  bottom: 120px;
+  font-size: 14px;
+  visibility: visible;
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  0% {
+    color: red;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes size {
+  0% {
+    padding: 10px 12px 8px;
+  }
+  50% {
+    padding: 14px 16px 12px;
+    margin-top: -4px;
+  }
+  100% {
+    padding: 10px 12px 8px;
   }
 }

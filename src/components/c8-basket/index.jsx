@@ -1,11 +1,18 @@
 import React from 'react';
 import s from './style.module.scss'
 import {Button} from "react-bootstrap";
+import {useDispatch, useSelector} from "react-redux";
+import {removeItemFromBasket} from "./basketReducer";
 
-const Basket = ({data, removeBasket}) => {
-    let allPrice = data.reduce((acc, curr) => +acc + +curr.price, 0);
+const Basket = ({basket}) => {
+    const dispatch = useDispatch()
+    const removeItemBasket = (id) => {
+        dispatch(removeItemFromBasket(id))
+    }
 
-    const basketItem = data?.map((el) => {
+    let allPrice = basket?.reduce((acc, curr) => +acc + +curr.price, 0);
+
+    const basketItem = basket?.map((el) => {
 
         return (
             <div className={s.item} key={el.id}>
@@ -14,7 +21,7 @@ const Basket = ({data, removeBasket}) => {
                 <p>{el.price} Br</p>
                 <p>1</p>
                 <p>{el.price} Br</p>
-                <div onClick={() => removeBasket(el.id)}>X</div>
+                <div onClick={() => removeItemBasket(el.id)}>X</div>
             </div>
         )
     })

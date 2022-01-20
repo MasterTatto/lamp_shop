@@ -4,15 +4,20 @@ import Routers from "./route";
 import {useState} from "react";
 import Container from "./common/container/container";
 import Footer from "./components/c7-footer";
+import {useSelector} from "react-redux";
 
 function App() {
     const [navigate, setNavigate] = useState(window.location.hash.slice(1) || '/')
-    const [basket, setBasket] = useState([])
+    const basket = useSelector((state) => state.basket.basket)
+    const liked = useSelector((state) => state.cardItems.liked)
+    console.log(liked)
+
     return (
         <div className="App">
-            <Header setNavigate={setNavigate} navigate={navigate} lengthBasket={basket.length}/>
+            <Header setNavigate={setNavigate} navigate={navigate} lengthBasket={basket.length}
+                    lengthLiked={liked.length}/>
             <Container>
-                <Routers basket={basket} setBasket={setBasket}/>
+                <Routers basket={basket} liked={liked}/>
             </Container>
             <Footer/>
             <div id="vk_community_messages"/>

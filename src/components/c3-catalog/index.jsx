@@ -1,14 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './style.module.scss'
 import {Card} from "react-bootstrap";
-import {cardItems} from "./data";
-import {NavLink, useParams} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
-const Catalog = () => {
-    const cardItem = cardItems.map((el) => {
+
+const Catalog = ({setCatalogID, card}) => {
+
+    const cardItem = card.map((el) => {
         return (
-            <NavLink to={`/catalog/${el.title}`}>
-                <Card style={{width: '18rem'}} key={el.id} className={s.items}>
+            <NavLink to={`/catalog/${el.title}`} key={el.id} onClick={() => setCatalogID(el.id)}>
+                <Card style={{width: '18rem'}} className={s.items}>
 
                     <Card.Img className={s.items_img} variant="top" src={el.img}/>
                     <Card.Body className={s.items_body}>

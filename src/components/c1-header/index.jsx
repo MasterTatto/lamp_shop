@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './style.module.scss'
 import Container from "../../common/container/container";
-import {ReactComponent as Lamp} from '../../assets/svg/logo.svg'
 import {ReactComponent as Basket} from '../../assets/svg/basket.svg'
+import {ReactComponent as Like} from '../../assets/svg/like.svg'
 import {NavLink} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
 
-const Header = ({navigate, setNavigate, lengthBasket}) => {
+const Header = ({navigate, setNavigate, lengthBasket, lengthLiked}) => {
 
     const backHome = useNavigate()
 
@@ -15,7 +15,6 @@ const Header = ({navigate, setNavigate, lengthBasket}) => {
             <Container>
                 <div className={s.header_container}>
                     <div className={s.logo_container} onClick={() => backHome('/')}>
-                        {/*<Lamp style={{height: '100%', width: '100%'}}/>*/}
                         Lamp Shop
                     </div>
                     <div className={s.panel_container}>
@@ -42,10 +41,19 @@ const Header = ({navigate, setNavigate, lengthBasket}) => {
                         </ul>
                     </div>
                     <div className={s.log_shop_container}>
-                        <NavLink to={'/basket'} className={s.basket_container}>
-                            <Basket className={s.basket}/>
-                            <div className={s.count}>{lengthBasket}</div>
+
+                        <NavLink to={'/liked'} className={s.basket_container}>
+                            <Like className={s.like} onClick={() => setNavigate('/liked')}
+                                  style={{fill: navigate === '/liked' && '#FA6585'}}/>
+                            {lengthLiked > 0 && <div className={s.count}>{lengthLiked}</div>}
                         </NavLink>
+
+                        <NavLink to={'/basket'} className={`${s.basket_container} ${s.like_container}`}>
+                            <Basket className={s.basket} onClick={() => setNavigate('/basket')}
+                                    style={{fill: navigate === '/basket' && '#FA6585'}}/>
+                            {lengthBasket > 0 && <div className={s.count}>{lengthBasket}</div>}
+                        </NavLink>
+
                     </div>
                 </div>
             </Container>
