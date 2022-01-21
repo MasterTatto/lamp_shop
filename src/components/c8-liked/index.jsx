@@ -21,7 +21,7 @@ const Liked = ({liked, catalogID}) => {
 
             <Card.Img className={s.items_img} variant="top" src={el.img}/>
             <Card.Body className={s.items_body}>
-                <div className={`${s.like} ${true && s.press}`}
+                <div className={`${s.like} ${s.press}`}
                      onClick={() => {
                          removeLikeItem(el.id)
                      }}>

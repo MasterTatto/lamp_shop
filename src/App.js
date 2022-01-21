@@ -8,19 +8,23 @@ import {useSelector} from "react-redux";
 
 function App() {
     const [navigate, setNavigate] = useState(window.location.hash.slice(1) || '/')
+    const [forceUpdate, setForceUpdate] = useState(1)
     const basket = useSelector((state) => state.basket.basket)
     const liked = useSelector((state) => state.cardItems.liked)
-    console.log(liked)
+
+    const forceUpdateHelper = () => {
+        setForceUpdate(forceUpdate + 1)
+    }
 
     return (
         <div className="App">
             <Header setNavigate={setNavigate} navigate={navigate} lengthBasket={basket.length}
                     lengthLiked={liked.length}/>
             <Container>
-                <Routers basket={basket} liked={liked}/>
+                <Routers basket={basket} liked={liked} forceUpdateHelper={forceUpdateHelper}/>
             </Container>
             <Footer/>
-            <div id="vk_community_messages"/>
+            {/*<div id="vk_community_messages"/>*/}
         </div>
     );
 }

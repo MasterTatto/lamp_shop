@@ -10,21 +10,24 @@ import Basket from "../components/c8-basket";
 import {useSelector} from "react-redux";
 import Liked from "../components/c8-liked";
 
-const Routers = ({basket, liked}) => {
+const Routers = ({basket, liked, forceUpdateHelper}) => {
     const [catalogID, setCatalogID] = useState()
     const card = useSelector((state) => state.card)
     const cardItems = useSelector((state) => state.cardItems.cards)
-    return (<Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/catalog" element={<Catalog setCatalogID={setCatalogID} card={card}/>}/>
-        <Route path="/catalog/:title"
-               element={<CatalogItem cardItems={cardItems[catalogID]} catalogID={catalogID}/>}/>
-        <Route path="/info" element={<Info/>}/>
-        <Route path="/garant" element={<Garant/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/basket" element={<Basket basket={basket}/>}/>
-        <Route path="/liked" element={<Liked liked={liked} catalogID={catalogID}/>}/>
-    </Routes>);
+
+    return (
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/catalog" element={<Catalog setCatalogID={setCatalogID} card={card}/>}/>
+            <Route path="/catalog/:title"
+                   element={<CatalogItem cardItems={cardItems[catalogID]} catalogID={catalogID}/>}/>
+            <Route path="/info" element={<Info/>}/>
+            <Route path="/garant" element={<Garant/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/basket" element={<Basket basket={basket} basketLength={basket.length}
+                                                   forceUpdateHelper={forceUpdateHelper}/>}/>
+            <Route path="/liked" element={<Liked liked={liked} catalogID={catalogID}/>}/>
+        </Routes>);
 };
 
 export default Routers;
