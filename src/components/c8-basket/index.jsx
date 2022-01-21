@@ -9,7 +9,6 @@ const Basket = ({basket}) => {
     const removeItemBasket = (id) => {
         dispatch(removeItemFromBasket(id))
     }
-
     let allPrice = basket?.reduce((acc, curr) => +acc + +curr.price, 0);
 
     const basketItem = basket?.map((el) => {

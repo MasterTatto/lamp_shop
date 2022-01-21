@@ -5,20 +5,28 @@ import s from "../style.module.scss";
 import {ReactComponent as Like} from "../../../../assets/svg/likeItem.svg";
 import {useDispatch} from "react-redux";
 import {addedToBasketAC} from "../../../c8-basket/basketReducer";
-import {addedToLikedAC, removeLikedInCategory, removeToLikedAC, toggleLikeAC} from "../cardiItemsreducer";
+import {
+    addedToLikedAC,
+    removeLikedInCategory,
+    removeLikeItemAC,
+    removeToLikedAC,
+    toggleLikeAC
+} from "../cardiItemsreducer";
 
 
 const Item = ({el, catalogID}) => {
     const dispatch = useDispatch()
-
     const addedToBasket = (data) => {
-        dispatch(addedToBasketAC(data))
+        dispatch(addedToBasketAC(data, el.id))
     }
     const toggleLike = (itemID) => {
+
+        if (el.like === true) {
+            dispatch(removeLikeItemAC(itemID))
+        } else {
+            dispatch(addedToLikedAC(catalogID, itemID))
+        }
         dispatch(toggleLikeAC(catalogID, itemID))
-        // if (el.like) return
-        // dispatch(removeLikedInCategory(catalogID, itemID))
-        dispatch(addedToLikedAC(catalogID, itemID))
     }
 
     return (

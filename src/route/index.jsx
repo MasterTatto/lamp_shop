@@ -14,7 +14,6 @@ const Routers = ({basket, liked}) => {
     const [catalogID, setCatalogID] = useState()
     const card = useSelector((state) => state.card)
     const cardItems = useSelector((state) => state.cardItems.cards)
-    console.log(cardItems)
     return (<Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/catalog" element={<Catalog setCatalogID={setCatalogID} card={card}/>}/>

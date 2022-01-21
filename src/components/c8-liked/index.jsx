@@ -3,7 +3,7 @@ import s from './style.module.scss'
 import {Button, Card} from "react-bootstrap";
 import {useDispatch} from "react-redux";
 import {addedToBasketAC} from "../c8-basket/basketReducer";
-import {removeLikeItemAC} from "../c3-catalog/catalogItem/cardiItemsreducer";
+import {removeLikeItemAC, toggleLikeAC} from "../c3-catalog/catalogItem/cardiItemsreducer";
 
 const Liked = ({liked, catalogID}) => {
     const dispatch = useDispatch();
@@ -11,19 +11,19 @@ const Liked = ({liked, catalogID}) => {
         dispatch(addedToBasketAC(data))
     }
 
-    const toggleLike = (itemID) => {
-        dispatch(removeLikeItemAC(itemID,catalogID))
+    const removeLikeItem = (itemID) => {
+        dispatch(removeLikeItemAC(itemID))
+        dispatch(toggleLikeAC(catalogID, itemID))
     }
 
-    const likedItem = liked?.filter(f => f.like).map((el) =>
+    const likedItem = liked?.map((el) =>
         <Card style={{width: '18rem'}} className={s.items} key={el.id}>
 
             <Card.Img className={s.items_img} variant="top" src={el.img}/>
             <Card.Body className={s.items_body}>
-                <div className={`${s.like} ${el.like && s.press}`}
+                <div className={`${s.like} ${true && s.press}`}
                      onClick={() => {
-                         console.log(el)
-                         toggleLike(el.id)
+                         removeLikeItem(el.id)
                      }}>
                     <i/>
                 </div>
