@@ -5,10 +5,6 @@ import {NavLink} from "react-router-dom";
 
 const Similar = ({randomItems, title}) => {
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [randomItems])
-
     return (
         <>
             <h2 className={s.title}>Похожие товары</h2>
@@ -22,7 +18,8 @@ const Similar = ({randomItems, title}) => {
                             <p>{el.title}</p>
                             <div className={s.item_bottom}>
                                 <p>{el.price} Br</p>
-                                <NavLink to={`/catalog/${title}/${el.title}`}><Button>Смотреть</Button></NavLink>
+                                <NavLink onClick={() => window.scrollTo(0, 0)}
+                                         to={`/catalog/${title}/${el.title}`}><Button>Смотреть</Button></NavLink>
                             </div>
 
                         </div>
