@@ -56,35 +56,17 @@
 
 .items_body {
   position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 
   div {
     margin: 10px 0 15px 0;
   }
 }
 
-//.like {
-//  position: absolute;
-//  height: 35px;
-//  right: 15px;
-//  top: 15px;
-//  overflow: hidden;
-//  width: 35px;
-//  fill: #444;
-//  transition: .4s all;
-//
-//
-//  &:hover {
-//    fill: #FA6585;
-//    cursor: pointer;
-//  }
-//}
-
 .btn {
   width: 100%;
-
-  &:first-child {
-    background: #fff;
-  }
 
   &:last-child {
     margin-top: 20px;

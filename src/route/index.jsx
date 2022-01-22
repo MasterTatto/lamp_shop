@@ -21,12 +21,13 @@ const Routers = ({basket, liked, forceUpdateHelper}) => {
             <Route path="/catalog" element={<Catalog setCatalogID={setCatalogID} card={card}/>}/>
             <Route path="/catalog/:title"
                    element={<CatalogItem cardItems={cardItems[catalogID]} catalogID={catalogID}/>}/>
-            <Route path="/info" element={<Info/>}/>
+            <Route path="/catalog/:title/:name" element={<Info cardItems={cardItems[catalogID]}/>}/>
             <Route path="/garant" element={<Garant/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/basket" element={<Basket basket={basket} basketLength={basket.length}
                                                    forceUpdateHelper={forceUpdateHelper}/>}/>
             <Route path="/liked" element={<Liked liked={liked} catalogID={catalogID}/>}/>
+
         </Routes>);
 };
 

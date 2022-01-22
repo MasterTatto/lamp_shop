@@ -2,7 +2,7 @@ import React, {useReducer, useState} from 'react';
 import s from './style.module.scss'
 import {Button} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
-import {decrementItem, removeItemFromBasket} from "./basketReducer";
+import {addedToBasketAC, decrementItem, decrementItemAC, removeItemFromBasket} from "./basketReducer";
 
 const Basket = ({basket, basketLength, forceUpdateHelper}) => {
     const dispatch = useDispatch()
@@ -15,7 +15,7 @@ const Basket = ({basket, basketLength, forceUpdateHelper}) => {
     let allPrice = basket?.reduce((acc, curr) => +acc + +curr.price, 0);
 
 
-    let baskItem = basket.reduce((acc, curr) => {
+    let baskItem = basket.sort().reduce((acc, curr) => {
         let finder = acc.findIndex((f) => f.id === curr.id)
         const candidate = acc[finder]
 
@@ -31,30 +31,12 @@ const Basket = ({basket, basketLength, forceUpdateHelper}) => {
 
     const basketItem = baskItem?.map((el) => {
 
-        const countInc = (id) => {
-
-            if (el.id === id) {
-                basket.push(el)
-            }
-
-            forceUpdateHelper()
+        const countInc = () => {
+            dispatch(addedToBasketAC(el))
         }
 
         const countDec = (id) => {
-
-            // const count = basket.filter(f => f.id === id)
-            // if (count.length >= 15) return
-            const currentCount = basket.filter(f => f.id === id)
-            const otherCount = basket.filter(f => f.id !== id)
-            // basket = currentCount.concat([...otherCount])
-            console.log(basket)
-            //
-            if (el.id === id) {
-                basket.pop()
-            }
-
-            forceUpdateHelper()
-
+            dispatch(decrementItemAC(id))
         }
 
         return (<div className={s.item} key={el.id}>
@@ -75,7 +57,7 @@ const Basket = ({basket, basketLength, forceUpdateHelper}) => {
                                     onClick={() => countDec(el.id)}>-</Button>
                             {el.count}
                             <Button className={`${s.counter_btn}`}
-                                    onClick={() => countInc(el.id)}>+</Button>
+                                    onClick={() => countInc()}>+</Button>
                         </div>
 
                     </div>

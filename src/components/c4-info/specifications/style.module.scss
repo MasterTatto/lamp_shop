@@ -1,0 +1,33 @@
+.spec {
+  margin-top: 20px;
+  border: 1px solid #c9c8c8;
+
+  div {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+
+    p {
+      width: 49%;
+      font-size: 1.3em;
+      font-weight: 600;
+      color: #3e3e3e;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+
+      &:last-child {
+        border-left: 1px solid #c9c8c8;
+        padding-left: 1%;
+      }
+    }
+
+    &:nth-child(odd) {
+      background: #e9e8f8;
+    }
+  }
+
+}

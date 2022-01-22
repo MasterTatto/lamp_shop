@@ -11,7 +11,7 @@ const Catalog = ({setCatalogID, card}) => {
             <NavLink to={`/catalog/${el.title}`} key={el.id} onClick={() => setCatalogID(el.id)}>
                 <Card style={{width: '18rem'}} className={s.items}>
 
-                    <Card.Img className={s.items_img} variant="top" src={el.img}/>
+                    <div className={s.items_img} style={{backgroundImage: `url(${el.img})`}}/>
                     <Card.Body className={s.items_body}>
                         <Card.Title>{el.title}</Card.Title>
                     </Card.Body>

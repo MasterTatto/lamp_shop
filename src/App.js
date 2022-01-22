@@ -24,7 +24,7 @@ function App() {
                 <Routers basket={basket} liked={liked} forceUpdateHelper={forceUpdateHelper}/>
             </Container>
             <Footer/>
-            {/*<div id="vk_community_messages"/>*/}
+            <div id="vk_community_messages"/>
         </div>
     );
 }

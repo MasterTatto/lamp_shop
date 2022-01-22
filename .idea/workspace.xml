@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abb86ffd-459d-4e93-b272-458359ca70ea" name="Changes" comment="fix(liked): currectly like for added and remove">
+    <list default="true" id="abb86ffd-459d-4e93-b272-458359ca70ea" name="Changes" comment="fix(basket): remove item">
+      <change afterPath="$PROJECT_DIR$/src/components/c4-info/decription/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/c4-info/decription/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/c4-info/similar/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/c4-info/similar/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/c4-info/specifications/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/c4-info/specifications/style.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/cardiItemsreducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/cardiItemsreducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/item/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/item/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c3-catalog/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c3-catalog/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c3-catalog/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c3-catalog/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c4-info/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c4-info/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/style.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/c8-basket/basketReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c8-basket/basketReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/c8-basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c8-basket/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c8-basket/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c8-basket/style.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c8-liked/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c8-liked/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/route/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +44,7 @@
   <component name="ProjectId" id="23s6yGNZAg4Kex2RP3rBjrXoUJW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -81,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.deploy" />
       </list>
     </recent_temporary>
   </component>
@@ -99,7 +112,9 @@
       <workItem from="1642585045190" duration="17361000" />
       <workItem from="1642664664977" duration="995000" />
       <workItem from="1642665686658" duration="27490000" />
-      <workItem from="1642750754007" duration="22492000" />
+      <workItem from="1642750754007" duration="22834000" />
+      <workItem from="1642777304640" duration="701000" />
+      <workItem from="1642848926061" duration="12218000" />
     </task>
     <task id="LOCAL-00001" summary="feature(home): init page">
       <created>1642528382256</created>
@@ -157,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642752635887</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix(basket): remove item">
+      <created>1642776609306</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642776609306</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +205,7 @@
     <MESSAGE value="feature(category items and basket): added" />
     <MESSAGE value="feature(like): added like page and redux" />
     <MESSAGE value="fix(liked): currectly like for added and remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(liked): currectly like for added and remove" />
+    <MESSAGE value="fix(basket): remove item" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(basket): remove item" />
   </component>
 </project>

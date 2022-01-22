@@ -1,0 +1,27 @@
+.desc {
+  div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    width: fit-content;
+    padding-bottom: 10px;
+
+    p {
+      font-size: 1.35em;
+      padding: 0;
+      margin: 0;
+      font-weight: 900;
+      width: 300px;
+      color: #3e3e3e;
+    }
+
+    span {
+      margin-left: 50px;
+      font-size: 1.2em;
+      width: 500px;
+      color: #3e3e3e;
+    }
+
+  }
+}

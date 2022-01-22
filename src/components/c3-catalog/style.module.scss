@@ -39,19 +39,29 @@
   margin-left: 50px;
   margin-top: 50px;
   cursor: pointer;
-  background: #e9e8f8;
   transition: .4s all ease-in-out;
   color: #21273d;
+  background: #fff;
+  border: none;
 
   &:hover {
-    transform: scale(1.1);
-    box-shadow: 7px 7px 8px #444;
+
+    .items_img{
+      transform: scale(1.06);
+      box-shadow: 7px 7px 8px #444;
+    }
+    transform: scale(1.06);
     color: #f86384;
   }
 }
 
 .items_img {
   height: 286px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: .4s all ease-in-out;
 }
 
 .items_body {

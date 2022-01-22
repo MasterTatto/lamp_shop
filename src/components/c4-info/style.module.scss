@@ -1,0 +1,164 @@
+.info {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px 52px;
+  padding-bottom: 40px;
+  position: relative;
+  margin-top: -27px;
+  z-index: 2;
+}
+
+.category_title {
+  color: #7C7284;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .3s all;
+
+  &:hover {
+    color: #f86384;
+  }
+}
+
+.active {
+  color: #f86384;
+}
+
+.top_block {
+  height: 550px;
+
+  display: flex;
+}
+
+.item {
+  padding-top: 50px;
+}
+
+.img {
+  height: 100%;
+  max-width: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.info_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 100px;
+
+  h2 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 900;
+  }
+
+  div {
+    .price {
+      color: #dd3f46;
+      font-size: 2em;
+      font-weight: 700;
+      margin-left: 40px;
+    }
+
+    .name_price {
+      color: #444;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+  }
+
+  button {
+    margin-top: 50px;
+    max-width: 200px;
+    width: 100%;
+    background: #f83d3d;
+    border: none;
+  }
+}
+
+.info_dostavka {
+  height: 270px;
+  width: 90%;
+  border-radius: 10px;
+  //box-shadow: 3px 3px 10px #444;
+  border: 1px solid #c9c8c8;
+  overflow: hidden;
+}
+
+.info_dostavka_item {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  p {
+    font-size: 1.35em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    color: #3e3e3e;
+  }
+
+  span {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #444;
+  }
+
+  &:first-child {
+    height: 90px;
+    background: #e9e8f8;
+    width: 100%;
+
+  }
+
+  &:last-child {
+    height: 90px;
+    width: 100%;
+
+    border-top: 1px solid #c9c8c8;
+  }
+}
+
+.middle_block {
+  margin-top: 80px;
+  border-top: 1px solid #c9c8c8;
+  padding: 20px 0;
+  border-bottom: 1px solid #c9c8c8;
+}
+
+.navigate {
+  display: flex;
+
+  h3 {
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+
+    &:hover {
+      color: #FA6585;
+    }
+
+    &:last-child {
+      margin-left: 40px;
+
+    }
+  }
+}
+
+.activeNav {
+  border-bottom: 3px solid #FA6585;
+  color: #FA6585;
+}

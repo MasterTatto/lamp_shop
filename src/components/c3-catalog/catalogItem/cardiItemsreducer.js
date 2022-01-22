@@ -49,202 +49,202 @@ const initialState = {
             }, {
                 img: img2r,
                 price: '55',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Панда "Люблю тебя" (Ваш текст)',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img3r,
                 price: '70',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Флэт - портрет (по фото с заливками)',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img4r,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Начало нашего пути" (текст ваш)',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img5r,
                 price: '35',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Фото-светильник + надпись',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img6r,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Мишка "Тедди"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img7r,
                 price: '37',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Сердце с именем (Ваш текст)',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img8r,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Лайт - портрет (Прорисовка по контуру фотографии)',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img9r,
                 price: '5',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Море и луна (Ваш текст)',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img10r,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Мишка "Люблю тебя" (Ваш текст)',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img11r,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Птички (Ваш текст)',
                 id: uuidv4(),
                 like: false
-            }, {img: img12r, price: '25', title: 'Два сердца "Я тебя люблю" (Ваш текст)', id: uuidv4(), like: false},],
+            }, {img: img12r, price: '25', title: 'Сердце и цветок (Ваш текст)', id: uuidv4(), like: false},],
             cardID: cardID1
         }, [cardID2]: {
             items: [{
                 img: img1k,
                 price: '45',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Джерри"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img2k,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Молния Маквин"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img3k,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д Ночник "Звёздный единорог"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img4k,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-Ночник "Динозавр №2"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img5k,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Мишка "Тедди"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img6k,
                 price: '45',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Little Pony"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img7k,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Ночник "Эльза - Холодное сердце"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img8k,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Ночник "Холодное сердце Эльза и Анна"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img9k,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Сова"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img10k,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Автомобиль " Porsche Panamera" (Порш панамера)',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img11k,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Стич"',
                 id: uuidv4(),
                 like: false
-            }, {img: img12k, price: '25', title: 'Два сердца "Я тебя люблю" (Ваш текст)', id: uuidv4(), like: false},],
+            }, {img: img12k, price: '25', title: 'Ночник "Маленький единорог"', id: uuidv4(), like: false},],
             cardID: cardID2
         }, [cardID3]: {
             items: [{
                 img: img1a,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Слон"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img2a,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Мишка с сердцем"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img3a,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Сова"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img4a,
                 price: '35',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Фламинго"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img5a,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3D-ночник "Два жирафа"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img6a,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3D-ночник "Павлин"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img7a,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Колибри и кольцо"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img8a,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Пони"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img9a,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: 'Ночник "Панда"(Ваш текст)',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img10a,
                 price: '25',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Джерри"',
                 id: uuidv4(),
                 like: false
             }, {
                 img: img11a,
                 price: '35',
-                title: 'Два сердца "Я тебя люблю" (Ваш текст)',
+                title: '3Д-светильник "Тираннозавр Рекс" (Динозавр)',
                 id: uuidv4(),
                 like: false
-            }, {img: img12a, price: '25', title: 'Два сердца "Я тебя люблю" (Ваш текст)', id: uuidv4(), like: false},],
+            }, {img: img12a, price: '25', title: '3Д-светильник "Белая акула"', id: uuidv4(), like: false},],
             cardID: cardID3
         }
     }, liked: []

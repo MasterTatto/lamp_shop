@@ -6,19 +6,17 @@ export const basketReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'ADDED_TO_BASKET' : {
             let card = action.data
-            // const idx = card.indexOf(c => c.id === action.itemID)
-
-            // const condidate = card[idx]
-            // if (condidate) {
-            //     condidate.count++
-            //     card[idx] = condidate
-            // } else {
-            //     card.count = 1
-            // }
             return {...state, basket: [...state.basket, card]}
         }
         case 'REMOVE_ITEM_BASKET' : {
             return {...state, basket: [...state.basket.filter((f) => f.id !== action.id)]}
+        }
+        case 'DECREMENT_BASKET_ITEM' : {
+            const currentItem = state.basket.filter(f => f.id === action.id)
+            const otherItem = state.basket.filter(f => f.id !== action.id)
+            currentItem.pop()
+            const answer = [...currentItem, ...otherItem]
+            return {...state, basket: answer}
         }
 
         default:
@@ -32,4 +30,8 @@ export const addedToBasketAC = (data, itemID) => {
 
 export const removeItemFromBasket = (id) => {
     return {type: 'REMOVE_ITEM_BASKET', id}
+}
+
+export const decrementItemAC = (id) => {
+    return {type: 'DECREMENT_BASKET_ITEM', id}
 }
