@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abb86ffd-459d-4e93-b272-458359ca70ea" name="Changes" comment="feature(info page): added page info and fix basket remove">
+    <list default="true" id="abb86ffd-459d-4e93-b272-458359ca70ea" name="Changes" comment="fix(info page): scrool to top">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/c4-info/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c4-info/similar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/similar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c4-info/similar/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/similar/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c4-info/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/style.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,7 @@
   <component name="ProjectId" id="23s6yGNZAg4Kex2RP3rBjrXoUJW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -97,7 +99,7 @@
       <workItem from="1642665686658" duration="27490000" />
       <workItem from="1642750754007" duration="22834000" />
       <workItem from="1642777304640" duration="701000" />
-      <workItem from="1642848926061" duration="13234000" />
+      <workItem from="1642848926061" duration="14816000" />
     </task>
     <task id="LOCAL-00001" summary="feature(home): init page">
       <created>1642528382256</created>
@@ -169,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642862314586</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix(info page): scrool to top">
+      <created>1642863249010</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1642863249010</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +206,7 @@
     <MESSAGE value="fix(liked): currectly like for added and remove" />
     <MESSAGE value="fix(basket): remove item" />
     <MESSAGE value="feature(info page): added page info and fix basket remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature(info page): added page info and fix basket remove" />
+    <MESSAGE value="fix(info page): scrool to top" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(info page): scrool to top" />
   </component>
 </project>
