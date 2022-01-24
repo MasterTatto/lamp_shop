@@ -10,11 +10,25 @@ import Basket from "../components/c8-basket";
 import {useSelector} from "react-redux";
 import Liked from "../components/c8-liked";
 import PayInfo from "../components/c9-pay_info";
+import PayPage from "../components/c9-pay_page";
 
 const Routers = ({basket, liked, forceUpdateHelper}) => {
     const [catalogID, setCatalogID] = useState()
     const card = useSelector((state) => state.card)
     const cardItems = useSelector((state) => state.cardItems.cards)
+
+    let baskItem = basket.reduce((acc, curr) => {
+        let finder = acc.findIndex((f) => f.id === curr.id)
+        const candidate = acc[finder]
+
+        if (!candidate) {
+            const item = {...curr, count: 1}
+            return acc.concat([item])
+        } else {
+            candidate.count++
+            return acc
+        }
+    }, [])
 
     return (
         <Routes>
@@ -29,6 +43,7 @@ const Routers = ({basket, liked, forceUpdateHelper}) => {
                                                    forceUpdateHelper={forceUpdateHelper}/>}/>
             <Route path="/liked" element={<Liked liked={liked} catalogID={catalogID}/>}/>
             <Route path="/pay-info" element={<PayInfo/>}/>
+            <Route path="/pay-page" element={<PayPage baskItem={baskItem}/>}/>
 
         </Routes>);
 };

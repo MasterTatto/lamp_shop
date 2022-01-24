@@ -1,0 +1,157 @@
+.pay_page {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px 52px;
+  padding-bottom: 40px;
+  position: relative;
+  margin-top: -27px;
+  z-index: 2;
+}
+
+.content {
+  display: flex;
+}
+
+.content_left {
+
+  flex: 0.5;
+  padding-right: 20px;
+}
+
+.content_right {
+  border-left: 1px solid;
+  flex: 0.5;
+  padding-left: 20px;
+}
+
+.item {
+
+  border: 1px solid rgba(68, 68, 68, 0.52);
+  height: fit-content;
+  background: #e9e8f8;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+
+  span {
+    font-size: 1.03em;
+    font-weight: 500;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3px;
+
+    font-weight: bold;
+    font-size: 1.2857rem;
+  }
+}
+
+.img {
+  height: 90px;
+  width: 90px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.counter_box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  padding-right: 20px;
+
+  &:last-child {
+    border-top: 1px solid;
+    padding-top: 30px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 1.2857rem;
+  }
+
+  p {
+    color: #333;
+    font-size: 1.12em;
+    font-weight: 600;
+  }
+}
+
+.counter_container {
+  margin-top: 50px;
+}
+
+.dostavka {
+  padding-bottom: 50px;
+  h3 {
+    margin: 50px 0 0 0;
+  }
+}
+
+.info_select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  h4 {
+    width: 400px;
+    font-size: 1.2857rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 1.2857rem;
+  }
+}
+
+
+.modile {
+  margin-top: 50px;
+  position: relative;
+
+  &:last-child {
+    margin-top: 70px;
+  }
+}
+
+.input {
+  width: 100%;
+  background: #e9e8f8;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+
+
+  input {
+    height: 40px;
+    font-size: 1.4em;
+  }
+
+  label {
+    font-size: 1.7em;
+  }
+}

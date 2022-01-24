@@ -3,6 +3,7 @@ import s from './style.module.scss'
 import {Button} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {addedToBasketAC, decrementItem, decrementItemAC, removeItemFromBasket} from "./basketReducer";
+import {NavLink} from "react-router-dom";
 
 const Basket = ({basket, basketLength, forceUpdateHelper}) => {
     const dispatch = useDispatch()
@@ -82,7 +83,7 @@ const Basket = ({basket, basketLength, forceUpdateHelper}) => {
         {basketLength !== 0 && <div className={s.accept}>
             <div className={s.accept_box}>
                 <p>Общая стоимость {allPrice} Br</p>
-                <Button>Оформить заказ</Button>
+                <NavLink to={'/pay-page'}> <Button>Оформить заказ</Button></NavLink>
             </div>
         </div>}
     </div>);

@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abb86ffd-459d-4e93-b272-458359ca70ea" name="Changes" comment="feature(info page): added like">
-      <change afterPath="$PROJECT_DIR$/src/components/c6-contact/map/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/c6-contact/map/style.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/c9-pay_info/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/c9-pay_info/style.module.scss" afterDir="false" />
+    <list default="true" id="abb86ffd-459d-4e93-b272-458359ca70ea" name="Changes" comment="feature(contact garant info-pay): added simpl pages">
+      <change afterPath="$PROJECT_DIR$/src/components/c9-pay_page/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/c9-pay_page/style.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c1-header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c1-header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c4-info/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c5-garant/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c5-garant/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c5-garant/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c5-garant/style.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c6-contact/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c6-contact/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c6-contact/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c6-contact/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/item/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c3-catalog/catalogItem/item/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c8-basket/basketReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c8-basket/basketReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/c8-basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c8-basket/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/route/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -40,6 +35,7 @@
   <component name="ProjectId" id="23s6yGNZAg4Kex2RP3rBjrXoUJW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -52,6 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -110,7 +107,7 @@
       <workItem from="1642750754007" duration="22834000" />
       <workItem from="1642777304640" duration="701000" />
       <workItem from="1642848926061" duration="14951000" />
-      <workItem from="1643013487568" duration="2701000" />
+      <workItem from="1643013487568" duration="12325000" />
     </task>
     <task id="LOCAL-00001" summary="feature(home): init page">
       <created>1642528382256</created>
@@ -196,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642864834115</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feature(contact garant info-pay): added simpl pages">
+      <created>1643016292064</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643016292064</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +230,7 @@
     <MESSAGE value="feature(info page): added page info and fix basket remove" />
     <MESSAGE value="fix(info page): scrool to top" />
     <MESSAGE value="feature(info page): added like" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature(info page): added like" />
+    <MESSAGE value="feature(contact garant info-pay): added simpl pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature(contact garant info-pay): added simpl pages" />
   </component>
 </project>

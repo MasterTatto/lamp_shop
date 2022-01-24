@@ -5,8 +5,10 @@ const initialState = {
 export const basketReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'ADDED_TO_BASKET' : {
-            let card = action.data
-            return {...state, basket: [...state.basket, card]}
+            let card = [...state.basket, action.data]
+
+
+            return {...state, basket: card}
         }
         case 'REMOVE_ITEM_BASKET' : {
             return {...state, basket: [...state.basket.filter((f) => f.id !== action.id)]}

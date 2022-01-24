@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {NavLink, useParams} from "react-router-dom";
-import {Button, Card} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import s from "../style.module.scss";
 import {ReactComponent as Like} from "../../../../assets/svg/likeItem.svg";
 import {useDispatch} from "react-redux";
@@ -8,6 +8,7 @@ import {addedToBasketAC} from "../../../c8-basket/basketReducer";
 import {
     addedToLikedAC, removeLikedInCategory, removeLikeItemAC, removeToLikedAC, toggleLikeAC
 } from "../cardiItemsreducer";
+import {Button} from "@mui/material";
 
 
 const Item = ({el, catalogID}) => {
@@ -39,11 +40,11 @@ const Item = ({el, catalogID}) => {
                 <h3>{el.price} Br</h3>
                 <Card.Title>{el.title}</Card.Title>
                 <div className={s.btn_box}>
-                    <Button variant="success" className={s.btn} onClick={() => addedToBasket(el)}>Добавить в
+                    <Button variant="contained" color={'success'} className={s.btn} onClick={() => addedToBasket(el)}>Добавить в
                         корзину</Button>
                     <NavLink
                         to={`/catalog/${title}/${el.title}`}>
-                        <Button variant="primary" className={s.btn}> Детали</Button> </NavLink>
+                        <Button variant="contained" className={s.btn}> Детали</Button> </NavLink>
                 </div>
             </Card.Body>
 
