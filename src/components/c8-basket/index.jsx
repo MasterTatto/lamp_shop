@@ -15,7 +15,7 @@ const Basket = ({basket, basketLength, forceUpdateHelper}) => {
     let allPrice = basket?.reduce((acc, curr) => +acc + +curr.price, 0);
 
 
-    let baskItem = basket.sort().reduce((acc, curr) => {
+    let baskItem = basket.reduce((acc, curr) => {
         let finder = acc.findIndex((f) => f.id === curr.id)
         const candidate = acc[finder]
 

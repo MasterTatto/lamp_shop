@@ -60,7 +60,7 @@ const Info = ({cardItems}) => {
                                 className={s.price}>{item.price} Br</span>
                             </div>
                             <div className={s.right_top_info_item}>
-                                <Button onClick={() => addedItemToBasket(item)}>Купить</Button>
+                                <Button onClick={() => addedItemToBasket(item)}>Добавить в корзину</Button>
                                 <div className={`${s.like} ${item.like ? s.press : s.div}`}
                                      onClick={() => toggleLike(item.id)}>
                                     <i/>

@@ -9,6 +9,7 @@ import CatalogItem from "../components/c3-catalog/catalogItem";
 import Basket from "../components/c8-basket";
 import {useSelector} from "react-redux";
 import Liked from "../components/c8-liked";
+import PayInfo from "../components/c9-pay_info";
 
 const Routers = ({basket, liked, forceUpdateHelper}) => {
     const [catalogID, setCatalogID] = useState()
@@ -27,6 +28,7 @@ const Routers = ({basket, liked, forceUpdateHelper}) => {
             <Route path="/basket" element={<Basket basket={basket} basketLength={basket.length}
                                                    forceUpdateHelper={forceUpdateHelper}/>}/>
             <Route path="/liked" element={<Liked liked={liked} catalogID={catalogID}/>}/>
+            <Route path="/pay-info" element={<PayInfo/>}/>
 
         </Routes>);
 };

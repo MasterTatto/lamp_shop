@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abb86ffd-459d-4e93-b272-458359ca70ea" name="Changes" comment="fix(info page): scrool to top">
+    <list default="true" id="abb86ffd-459d-4e93-b272-458359ca70ea" name="Changes" comment="feature(info page): added like">
+      <change afterPath="$PROJECT_DIR$/src/components/c6-contact/map/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/c6-contact/map/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/c9-pay_info/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/c9-pay_info/style.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c1-header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c1-header/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/c4-info/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c4-info/similar/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/similar/style.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/c4-info/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c4-info/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c5-garant/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c5-garant/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c5-garant/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c5-garant/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c6-contact/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c6-contact/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c6-contact/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c6-contact/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/c8-basket/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/c8-basket/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/route/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +40,6 @@
   <component name="ProjectId" id="23s6yGNZAg4Kex2RP3rBjrXoUJW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -37,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/c8-liked" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -46,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gromv\Documents\lamp_shop\src\components" />
       <recent name="C:\Users\gromv\Documents\lamp_shop\src\components\c8-liked" />
       <recent name="C:\Users\gromv\Documents\lamp_shop\src\assets\svg" />
       <recent name="C:\Users\gromv\Documents\lamp_shop\src\components\c6-contact" />
       <recent name="C:\Users\gromv\Documents\lamp_shop\src\components\c5-garant" />
-      <recent name="C:\Users\gromv\Documents\lamp_shop\src\components\c4-info" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gromv\Documents\lamp_shop\src\common\container" />
@@ -79,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.deploy" />
       </list>
     </recent_temporary>
   </component>
@@ -99,7 +109,8 @@
       <workItem from="1642665686658" duration="27490000" />
       <workItem from="1642750754007" duration="22834000" />
       <workItem from="1642777304640" duration="701000" />
-      <workItem from="1642848926061" duration="14816000" />
+      <workItem from="1642848926061" duration="14951000" />
+      <workItem from="1643013487568" duration="2701000" />
     </task>
     <task id="LOCAL-00001" summary="feature(home): init page">
       <created>1642528382256</created>
@@ -178,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642863249010</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feature(info page): added like">
+      <created>1642864834115</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1642864834115</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +225,7 @@
     <MESSAGE value="fix(basket): remove item" />
     <MESSAGE value="feature(info page): added page info and fix basket remove" />
     <MESSAGE value="fix(info page): scrool to top" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(info page): scrool to top" />
+    <MESSAGE value="feature(info page): added like" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature(info page): added like" />
   </component>
 </project>

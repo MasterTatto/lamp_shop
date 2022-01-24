@@ -1,4 +1,4 @@
-.garant {
+.pay_info {
   background: #fff;
   border-radius: 5px;
   padding: 10px 52px;
@@ -25,13 +25,11 @@
     font-weight: 500;
   }
 
-  ul {
-    li {
-      font-style: italic;
-      font-size: 18px;
-      text-decoration: underline;
-      color: #fa3862;
-      margin-top: 10px;
-    }
+
+  span{
+    font-weight: 500;
+    font-size: 16px;
+
   }
+
 }

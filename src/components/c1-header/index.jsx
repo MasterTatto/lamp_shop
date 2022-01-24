@@ -26,8 +26,8 @@ const Header = ({navigate, setNavigate, lengthBasket, lengthLiked}) => {
                                      className={navigate === '/catalog' && s.active}>
                                 <li>Каталог</li>
                             </NavLink>
-                            <NavLink to={'/info'} onClick={() => setNavigate('/info')}
-                                     className={navigate === '/info' && s.active}>
+                            <NavLink to={'/pay-info'} onClick={() => setNavigate('/pay-info')}
+                                     className={navigate === '/pay-info' && s.active}>
                                 <li>доставка и оплата</li>
                             </NavLink>
                             <NavLink to={'/garant'} onClick={() => setNavigate('/garant')}
