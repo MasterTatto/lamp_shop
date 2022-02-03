@@ -2,8 +2,8 @@ import React from 'react';
 import s from './style.module.scss'
 import {Button, Card} from "react-bootstrap";
 import {useDispatch} from "react-redux";
-import {addedToBasketAC} from "../c8-basket/basketReducer";
-import {removeLikeItemAC, toggleLikeAC} from "../c3-catalog/catalogItem/cardiItemsreducer";
+
+import {addedToBasketAC, removeLikeItemAC, toggleLikeAC} from "../c3-catalog/catalogItem/cardiItemsreducer";
 
 const Liked = ({liked, catalogID}) => {
     const dispatch = useDispatch();

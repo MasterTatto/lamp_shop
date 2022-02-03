@@ -45,215 +45,277 @@ const initialState = {
                 price: '15',
                 title: 'Два сердца "Я тебя люблю" (Ваш текст)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img2r,
                 price: '55',
                 title: 'Панда "Люблю тебя" (Ваш текст)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img3r,
                 price: '70',
                 title: 'Флэт - портрет (по фото с заливками)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img4r,
                 price: '25',
                 title: '3Д-светильник "Начало нашего пути" (текст ваш)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img5r,
                 price: '35',
                 title: 'Фото-светильник + надпись',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
-                img: img6r,
-                price: '25',
-                title: 'Мишка "Тедди"',
-                id: uuidv4(),
-                like: false
+                img: img6r, price: '25', title: 'Мишка "Тедди"', id: uuidv4(), like: false, isBuy: false, count: 0
             }, {
                 img: img7r,
                 price: '37',
                 title: 'Сердце с именем (Ваш текст)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img8r,
                 price: '25',
                 title: 'Лайт - портрет (Прорисовка по контуру фотографии)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img9r,
                 price: '5',
                 title: 'Море и луна (Ваш текст)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img10r,
                 price: '25',
                 title: 'Мишка "Люблю тебя" (Ваш текст)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
-                img: img11r,
+                img: img11r, price: '25', title: 'Птички (Ваш текст)', id: uuidv4(), like: false, isBuy: false, count: 0
+            }, {
+                img: img12r,
                 price: '25',
-                title: 'Птички (Ваш текст)',
+                title: 'Сердце и цветок (Ваш текст)',
                 id: uuidv4(),
-                like: false
-            }, {img: img12r, price: '25', title: 'Сердце и цветок (Ваш текст)', id: uuidv4(), like: false},],
-            cardID: cardID1
+                like: false,
+                isBuy: false,
+                count: 1
+            },], cardID: cardID1
         }, [cardID2]: {
             items: [{
                 img: img1k,
                 price: '45',
                 title: '3Д-светильник "Джерри"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img2k,
                 price: '25',
                 title: '3Д-светильник "Молния Маквин"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img3k,
                 price: '25',
                 title: '3Д Ночник "Звёздный единорог"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img4k,
                 price: '25',
                 title: '3Д-Ночник "Динозавр №2"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
-                img: img5k,
-                price: '25',
-                title: 'Мишка "Тедди"',
-                id: uuidv4(),
-                like: false
+                img: img5k, price: '25', title: 'Мишка "Тедди"', id: uuidv4(), like: false, isBuy: false, count: 0
             }, {
                 img: img6k,
                 price: '45',
                 title: '3Д-светильник "Little Pony"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img7k,
                 price: '25',
                 title: 'Ночник "Эльза - Холодное сердце"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img8k,
                 price: '25',
                 title: 'Ночник "Холодное сердце Эльза и Анна"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img9k,
                 price: '25',
                 title: '3Д-светильник "Сова"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img10k,
                 price: '25',
                 title: 'Автомобиль " Porsche Panamera" (Порш панамера)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img11k,
                 price: '25',
                 title: '3Д-светильник "Стич"',
                 id: uuidv4(),
-                like: false
-            }, {img: img12k, price: '25', title: 'Ночник "Маленький единорог"', id: uuidv4(), like: false},],
-            cardID: cardID2
+                like: false,
+                isBuy: false,
+                count: 1
+            }, {
+                img: img12k,
+                price: '25',
+                title: 'Ночник "Маленький единорог"',
+                id: uuidv4(),
+                like: false,
+                isBuy: false,
+                count: 1
+            },], cardID: cardID2
         }, [cardID3]: {
             items: [{
                 img: img1a,
                 price: '25',
                 title: '3Д-светильник "Слон"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img2a,
                 price: '25',
                 title: '3Д-светильник "Мишка с сердцем"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img3a,
                 price: '25',
                 title: '3Д-светильник "Сова"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img4a,
                 price: '35',
                 title: '3Д-светильник "Фламинго"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img5a,
                 price: '25',
                 title: '3D-ночник "Два жирафа"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
-                img: img6a,
-                price: '25',
-                title: '3D-ночник "Павлин"',
-                id: uuidv4(),
-                like: false
+                img: img6a, price: '25', title: '3D-ночник "Павлин"', id: uuidv4(), like: false, isBuy: false, count: 0
             }, {
                 img: img7a,
                 price: '25',
                 title: '3Д-светильник "Колибри и кольцо"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img8a,
                 price: '25',
                 title: '3Д-светильник "Пони"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img9a,
                 price: '25',
                 title: 'Ночник "Панда"(Ваш текст)',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img10a,
                 price: '25',
                 title: '3Д-светильник "Джерри"',
                 id: uuidv4(),
-                like: false
+                like: false,
+                isBuy: false,
+                count: 1
             }, {
                 img: img11a,
                 price: '35',
                 title: '3Д-светильник "Тираннозавр Рекс" (Динозавр)',
                 id: uuidv4(),
-                like: false
-            }, {img: img12a, price: '25', title: '3Д-светильник "Белая акула"', id: uuidv4(), like: false},],
-            cardID: cardID3
+                like: false,
+                isBuy: false,
+                count: 1
+            }, {
+                img: img12a,
+                price: '25',
+                title: '3Д-светильник "Белая акула"',
+                id: uuidv4(),
+                like: false,
+                isBuy: false,
+                count: 1
+            },], cardID: cardID3
         }
-    }, liked: []
+    }, liked: [], basket: []
 }
 
 export const cardItemsReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'TOGGLE_LIKE' : {
-
             state.cards[action.cardID].items = state.cards[action.cardID].items.map((el) => el.id === action.itemID ? {
                 ...el, like: !el.like
             } : el)
@@ -268,6 +330,37 @@ export const cardItemsReducer = (state = initialState, action) => {
         case 'REMOVED_LIKED_IN_PAGE' : {
             const item = state.liked.filter(f => f.id !== action.itemID)
             return {...state, liked: [...item]}
+        }
+
+        case 'TOGGLE_BASKET' : {
+            state.cards[action.cardID].items = state.cards[action.cardID].items.map((el) => el.id === action.itemID ? {
+                ...el, isBuy: !el.isBuy
+            } : el)
+            return {...state}
+        }
+
+        case 'ADDED_TO_BASKET' : {
+            const item = state.cards[action.cardID].items.filter((el) => el.id === action.itemID)
+
+            return {...state, basket: [...state.basket, ...item]}
+        }
+
+        case 'REMOVED_BASKET_IN_PAGE' : {
+            const item = state.basket.filter(f => f.id !== action.itemID)
+            return {...state, basket: [...item]}
+
+        }
+
+        case 'INCREMENT_BASKET_ITEM' : {
+            const items = state.basket.map((el) => el.id === action.itemID ? {...el, count: el.count + 1} : el)
+
+            return {...state, basket: [...items]}
+        }
+
+        case 'DECREMENT_BASKET_ITEM' : {
+            const items = state.basket.map((el) => el.id === action.itemID ? {...el, count: el.count - 1} : el)
+
+            return {...state, basket: [...items]}
         }
 
         default:
@@ -287,3 +380,22 @@ export const addedToLikedAC = (cardID, itemID) => {
     return {type: 'ADDED_TO_LIKED', cardID, itemID}
 }
 
+export const toggleBasketAC = (cardID, itemID) => {
+    return {type: 'TOGGLE_BASKET', cardID, itemID}
+}
+
+export const addedToBasketAC = (cardID, itemID) => {
+    return {type: 'ADDED_TO_BASKET', cardID, itemID}
+}
+
+export const removeBasketItemAC = (itemID) => {
+    return {type: 'REMOVED_BASKET_IN_PAGE', itemID}
+}
+
+export const incrementBasketItemAC = (itemID) => {
+    return {type: 'INCREMENT_BASKET_ITEM', itemID}
+}
+
+export const decrementBasketItemAC = (itemID) => {
+    return {type: 'DECREMENT_BASKET_ITEM', itemID}
+}

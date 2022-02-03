@@ -2,42 +2,35 @@ import React, {useReducer, useState} from 'react';
 import s from './style.module.scss'
 import {Button} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
-import {addedToBasketAC, decrementItem, decrementItemAC, removeItemFromBasket} from "./basketReducer";
+import {decrementItem, decrementItemAC} from "./basketReducer";
 import {NavLink} from "react-router-dom";
+import {
+    addedToBasketAC, decrementBasketItemAC, incrementBasketItemAC,
+    removeBasketItemAC,
+    removeLikeItemAC, toggleBasketAC,
+    toggleLikeAC
+} from "../c3-catalog/catalogItem/cardiItemsreducer";
 
-const Basket = ({basket, basketLength, forceUpdateHelper}) => {
+const Basket = ({basket, basketLength, forceUpdateHelper, catalogID}) => {
     const dispatch = useDispatch()
 
-
+    console.log(basket)
     const removeItemBasket = (id) => {
-        dispatch(removeItemFromBasket(id))
+        dispatch(removeBasketItemAC(id))
+        dispatch(toggleBasketAC(catalogID, id))
     }
 
-    let allPrice = basket?.reduce((acc, curr) => +acc + +curr.price, 0);
+    // let allPrice = basket?.reduce((acc, curr) => (+acc + +curr.price) * curr.count, 0);
+    let allPrice = basket?.reduce((acc, curr) => +acc + (+curr.price * curr.count), 0);
 
+    const basketItem = basket?.map((el) => {
 
-    let baskItem = basket.reduce((acc, curr) => {
-        let finder = acc.findIndex((f) => f.id === curr.id)
-        const candidate = acc[finder]
-
-        if (!candidate) {
-            const item = {...curr, count: 1}
-            return acc.concat([item])
-        } else {
-            candidate.count++
-            return acc
-        }
-    }, [])
-
-
-    const basketItem = baskItem?.map((el) => {
-
-        const countInc = () => {
-            dispatch(addedToBasketAC(el))
+        const countInc = (id) => {
+            dispatch(incrementBasketItemAC(id))
         }
 
         const countDec = (id) => {
-            dispatch(decrementItemAC(id))
+            dispatch(decrementBasketItemAC(id))
         }
 
         return (<div className={s.item} key={el.id}>
@@ -58,7 +51,7 @@ const Basket = ({basket, basketLength, forceUpdateHelper}) => {
                                     onClick={() => countDec(el.id)}>-</Button>
                             {el.count}
                             <Button className={`${s.counter_btn}`}
-                                    onClick={() => countInc()}>+</Button>
+                                    onClick={() => countInc(el.id)}>+</Button>
                         </div>
 
                     </div>

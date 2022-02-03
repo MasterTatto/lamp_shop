@@ -7,8 +7,13 @@ import Description from "./decription";
 import Similar from "./similar";
 import {logDOM} from "@testing-library/react";
 import {useDispatch} from "react-redux";
-import {addedToBasketAC} from "../c8-basket/basketReducer";
-import {addedToLikedAC, removeLikeItemAC, toggleLikeAC} from "../c3-catalog/catalogItem/cardiItemsreducer";
+
+import {
+    addedToBasketAC,
+    addedToLikedAC,
+    removeLikeItemAC,
+    toggleLikeAC
+} from "../c3-catalog/catalogItem/cardiItemsreducer";
 
 const Info = ({cardItems}) => {
     const [showNavigate, setShowNavigate] = useState(1)

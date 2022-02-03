@@ -39,7 +39,7 @@ const Routers = ({basket, liked, forceUpdateHelper}) => {
             <Route path="/catalog/:title/:name" element={<Info cardItems={cardItems[catalogID]}/>}/>
             <Route path="/garant" element={<Garant/>}/>
             <Route path="/contact" element={<Contact/>}/>
-            <Route path="/basket" element={<Basket basket={basket} basketLength={basket.length}
+            <Route path="/basket" element={<Basket catalogID={catalogID} basket={basket} basketLength={basket.length}
                                                    forceUpdateHelper={forceUpdateHelper}/>}/>
             <Route path="/liked" element={<Liked liked={liked} catalogID={catalogID}/>}/>
             <Route path="/pay-info" element={<PayInfo/>}/>
